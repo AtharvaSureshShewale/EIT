@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Grid System</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Container -->
+<div class="container">
+    <!-- Row -->
+    <div class="row">
+        <!-- Columns -->
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div style="background-color: #f0f0f0; padding: 10px; margin-bottom: 20px;">Column 1</div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div style="background-color: #f0f0f0; padding: 10px; margin-bottom: 20px;">Column 2</div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div style="background-color: #f0f0f0; padding: 10px; margin-bottom: 20px;">Column 3</div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div style="background-color: #f0f0f0; padding: 10px; margin-bottom: 20px;">Column 4</div>
+        </div>
+    </div>
+</div>
+
+<!-- Clear Fix -->
+<div class="clearfix"></div>
+
+<style>
+/* Container */
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Columns */
+[class^="col-"] {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Clear Fix */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+
+</body>
+</html>
